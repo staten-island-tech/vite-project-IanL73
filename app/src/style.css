@@ -1,10 +1,29 @@
 :root {
-  --primary-color: lightgrey;
-  --secondary-color: lightblue;
-  --highlight-color: skyblue;
+  --light-blue: #2998ff;
+  --dark-blue: #135cc5;
+  --light-red: #f87171;
+  --dark-red: #dc2626;
+
+  /* Intentions */
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
 }
 
-button {
-  background-color: var(--primary-color);
-  color: white;
+.cool {
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+}
+
+.warm {
+  --primary: var(--light-red);
+  --secondary: var(--dark-red);
+}
+
+.hero {
+  background-color: var(--primary);
+}
+
+.main {
+  background-color: var(--secondary);
+  height: 90vh;
 }

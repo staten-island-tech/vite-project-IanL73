@@ -2,16 +2,29 @@ import './style.css'
 import { setupCounter } from './counter.js'
 
 
-// Doing digital art gallery
-//create array of entries
-//function to insert filtered entries
-//program entries to show popup when clicked
-//make input fields for new image and accompanying description
-//highlighted entry of the day that changes on the minute for testing purposes
-//light mode dark mode
+document.querySelector(".btn").addEventListener("click", function () {
+  if (document.body.classList.contains("cool")) {
+    document.body.classList.add("warm");
+    document.body.classList.remove("cool");
+  } else {
+    document.body.classList.add("cool");
+    document.body.classList.remove("warm");
+  }
+});
 
-document.querySelector('#app').innerHTML = `
-  <button class="button">click this button to do... something i guess</button>
-`
 
-setupCounter(document.querySelector('#counter'))
+
+
+
+/*
+ _________   _______
+|          \|         \
+|           \          \
+|           O|         O|
+ \__________/__________/
+   _______________________\ 
+ /___|___|____|___|____|__|
+|                  /
+|__________________\_____                     
+ \__|_____|____|___|____|
+ */
