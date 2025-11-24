@@ -34,7 +34,7 @@ charlie.forEach((product) => inject(product))
 
 
 /*
- _________   _______
+ _________   _________
 |          \|         \
 |         ()\        ()\
 |            |          |
@@ -45,5 +45,4 @@ charlie.forEach((product) => inject(product))
 |__________________\_____                     
  \__|_____|____|___|____|
                        /
-
  */

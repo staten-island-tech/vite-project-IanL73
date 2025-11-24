@@ -5,7 +5,7 @@
   --dark-red: #000000;
 
   /* default */
-  --primary: var(--white);
+  --primary: var(--light-blue);
   --secondary: var(--dark-blue);
 }
 
@@ -24,8 +24,10 @@
 }
 
 .main {
-  background-color: var(--secondary);
-  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--secondary); 
 }
 
 .item {
@@ -69,3 +71,4 @@
     font-size:medium;
     color: var(--primary);
 }
+
