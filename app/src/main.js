@@ -21,12 +21,8 @@ function inject(product){
     container.insertAdjacentHTML(
         "beforeend",
         `<div class="item" data-title="${product.title}" price=${product.price}>
-            <h4 class="item-class">${product.class}</h4>
+            <h4 class="item-title">${product.title}</h4>
             <img class="item-image" src="${product.image}"/>
-            <h2 class="item-name">${product.title}</h2>
-            <h3 class="item-description">${product.desc}</h3>
-            <h4 class="item-price">${product.price}$</h4>
-            <button class="item-buy">add to cart</button>
         </div>`
     );
 }

@@ -3,14 +3,12 @@
     "title": "Perfectly Generic Object",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Cube_with_Blender.svg/2048px-Cube_with_Blender.svg.png",
     "desc": "Perfectly generic, and perfectly useless.",
-    "price": 1,
-    "class": "Red"
+    "artist": "Daniel"
   },
   {
     "title": "Notably Pointy Object",
     "image": "https://i.redd.it/njnnepzm1q071.png",
     "desc": "Don't step on it. If you do you'll regret it.",
-    "price": 2,
-    "class": "Blue"
+    "artist": "Charlie"
   }
 ]
