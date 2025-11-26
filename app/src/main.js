@@ -28,6 +28,9 @@ function inject(product){
 }
 charlie.forEach((product) => inject(product))
 
+document.querySelector(".item").addEventListener("click", function () {
+  document.querySelector(".blurb").showModal();
+})
 
 /*
  _________   _________
