@@ -28,9 +28,21 @@ function inject(product){
 }
 charlie.forEach((product) => inject(product))
 
-document.querySelector(".item").addEventListener("click", function () {
+document.querySelectorAll(".item").forEach((item)=>item.addEventListener("click", function () {
+  document.querySelector(".blurb-container").innerHTML = ""
+  document.querySelector(".blurb-container").insertAdjacentHTML(
+    "afterbegin",
+    `
+    <h4 class="blurb-author">Me. I made this</h4>
+    <h4 class="blurb-text">description words description words description words description words description words description words </h4>
+    `
+  )
   document.querySelector(".blurb").showModal();
-})
+}))
+document.querySelector(".close").addEventListener("click", () => {
+  console.log("You pressed the close button")
+  document.querySelector(".blurb").close("animalNotChosen");
+});
 
 /*
  _________   _________
