@@ -1,14 +1,24 @@
 [
   {
-    "title": "Perfectly Generic Object",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Cube_with_Blender.svg/2048px-Cube_with_Blender.svg.png",
-    "desc": "Perfectly generic, and perfectly useless.",
-    "artist": "Daniel"
+    "title": "The Touchy Touchy Finger One",
+    "image": "https://c8.alamy.com/comp/AD1TR1/michelangelos-ceiling-painting-sistine-chapel-vatican-rome-italy-AD1TR1.jpg",
+    "desc": "I think this is supposed to depect, like, enlightenment or something? I don't know.",
+    "artist": "Michelangelo"
   },
   {
-    "title": "Notably Pointy Object",
-    "image": "https://i.redd.it/njnnepzm1q071.png",
-    "desc": "Don't step on it. If you do you'll regret it.",
-    "artist": "Charlie"
+    "title": "The Mona ****ing Lisa",
+    "image": "https://www.artchive.com/wp-content/uploads/2023/04/Mona-Lisa-Leonardo-da-Vinci-c.-1503-4-4-scaled.jpg",
+    "desc": "Look at the devious ass smile. Surely, nothing good could possibly be behind those wicked eyes. I swear I'm not a misogynist.",
+    "artist": "Leonardo"
+  },{
+    "title": "Old Guy With Beard",
+    "image": "https://th.bing.com/th/id/R.e1e92c9e18905efa7fdcf6d59f4842d5?rik=1SVFx9PLxi%2bBKw&pid=ImgRaw&r=0",
+    "desc": "Oh my good he so old.",
+    "artist": "Da Vinci"
+  },{
+    "title": "Rats, Rats, We Are the Rats",
+    "image": "https://tse3.mm.bing.net/th/id/OIP.v_cvMbm_dJcdV81_-lcdGgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "desc": "Celebrating yet another birthday bash.",
+    "artist": "Jeremy Elbertson"
   }
 ]

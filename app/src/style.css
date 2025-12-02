@@ -79,3 +79,18 @@
     color: var(--primary);
 }
 
+.blurb {
+  background-color: var(--secondary);
+  border-color: var(--primary);
+}
+.blurb-author{
+  color: var(--primary);
+}
+.blurb-text{
+  color: var(--primary);
+}
+
+.blurb-image {
+  height: 500px;
+  border: 5px solid var(--primary);
+}
