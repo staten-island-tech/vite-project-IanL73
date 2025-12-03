@@ -2,6 +2,19 @@ import './style.css'
 import { setupCounter } from './counter.js'
 import gallery from './array.json'
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+let randomArt = getRandomInt(gallery.length)
+console.log(randomArt)
+console.log(document.querySelector(".art-of-day"))
+document.querySelector(".art-of-day").insertAdjacentHTML(
+  "beforeend",
+  `
+  <h4 class="art-of-day-title">${gallery[randomArt].title}</h4>
+  <img class="art-of-day-image" src="${gallery[randomArt].image}"/>
+  `
+)
 
 document.querySelector(".btn").addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
