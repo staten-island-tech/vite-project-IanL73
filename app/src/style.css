@@ -24,11 +24,16 @@
   --highlight: var(--red);
 }
 
+body {
+  background-color: var(--secondary);
+}
+
 .hero {
   background-color: var(--primary);
 }
 
 .main {
+  border: 5px solid var(--primary);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -98,4 +103,12 @@
 
 .art-of-day-image {
   height: 500px;
+}
+
+.art-of-day-title {
+  color: var(--primary);
+}
+
+.big-wow-banner {
+  color: var(--primary);
 }
