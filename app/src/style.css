@@ -112,3 +112,7 @@ body {
 .big-wow-banner {
   color: var(--primary);
 }
+
+label {
+  counter-reset: var(--primary);
+}

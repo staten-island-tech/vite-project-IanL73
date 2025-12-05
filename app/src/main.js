@@ -6,8 +6,6 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 let randomArt = getRandomInt(gallery.length)
-console.log(randomArt)
-console.log(document.querySelector(".art-of-day"))
 document.querySelector(".art-of-day").insertAdjacentHTML(
   "beforeend",
   `
@@ -57,14 +55,18 @@ document.querySelectorAll(".item").forEach((item)=>item.addEventListener("click"
   document.querySelector(".blurb").showModal();
 }))
 document.querySelector(".close").addEventListener("click", () => {
-  console.log("You pressed the close button")
   document.querySelector(".blurb").close("animalNotChosen");
 });
+document.querySelector(".submit").addEventListener("click", function () {
+  console.log(document.querySelector(".Url-box").value)
+})
+
+
 
 /*
- _________   _________
-|          \|         \
-|         ()\        ()\
+   _________    _______
+ /          \ /        \
+|         () \       () \
 |            |          |
  \__________/__________/
    _______________________\ 
