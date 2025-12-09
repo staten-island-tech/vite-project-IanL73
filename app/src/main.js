@@ -37,7 +37,6 @@ function inject(piece){
         </div>`
     );
 }
-gallery.forEach((piece) => inject(piece))
 
 document.querySelectorAll(".item").forEach((item)=>item.addEventListener("click", function () {
   document.querySelector(".blurb-container").innerHTML = ""
@@ -58,8 +57,10 @@ document.querySelector(".close").addEventListener("click", () => {
   document.querySelector(".blurb").close("animalNotChosen");
 });
 document.querySelector(".submit").addEventListener("click", function () {
-  console.log(document.querySelector(".Url-box").value)
+  gallery.push({"title": document.querySelector(".Title-box").value, "image": document.querySelector(".Url-box")});
+  console.log("gallery")
 })
+gallery.forEach((piece) => inject(piece))
 
 
 
