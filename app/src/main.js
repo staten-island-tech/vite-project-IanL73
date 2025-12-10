@@ -57,8 +57,8 @@ document.querySelector(".close").addEventListener("click", () => {
   document.querySelector(".blurb").close("animalNotChosen");
 });
 document.querySelector(".submit").addEventListener("click", function () {
-  gallery.push({"title": document.querySelector(".Title-box").value, "image": document.querySelector(".Url-box")});
-  console.log("gallery")
+  gallery.push({"title": document.querySelector(".Title-box").value, "image": document.querySelector(".Url-box").value, "desc": document.querySelector(".Desc-box").value, "artist": document.querySelector(".Artist-box").value});
+  console.log(gallery)
 })
 gallery.forEach((piece) => inject(piece))
 
