@@ -37,31 +37,48 @@ function inject(piece){
         </div>`
     );
 }
+gallery.forEach((piece) => inject(piece))
 
-document.querySelectorAll(".item").forEach((item)=>item.addEventListener("click", function () {
-  document.querySelector(".blurb-container").innerHTML = ""
-  console.log(gallery)
-  let title = event.target.closest(".item").getAttribute("data-title")
-  let selecteditem = gallery.find((item)=>item.title === title)
-  document.querySelector(".blurb-container").insertAdjacentHTML(
-    "afterbegin",
-    `
-    <h4 class="blurb-author">Artist: ${selecteditem.artist}</h4>
-    <h4 class="blurb-text">${selecteditem.desc}</h4>
-    <img class="blurb-image" src="${selecteditem.image}"/>
-    `
-  )
-  document.querySelector(".blurb").showModal();
-}))
-document.querySelector(".close").addEventListener("click", () => {
-  document.querySelector(".blurb").close("animalNotChosen");
-});
+const filters = document.querySelector(".filter");
+    const shop = document.querySelector(".main");
+    filters.addEventListener("click", function(event) {
+        shop.innerHTML = ""
+        let criteria = document.querySelector(".Search-box").value
+        console.log(criteria)
+        let filteredproducts = gallery.filter((gall) => gall.title === criteria)
+        filteredproducts.forEach((filteredproduct)=> inject(filteredproduct))}
+    );
+
 document.querySelector(".submit").addEventListener("click", function () {
   gallery.push({"title": document.querySelector(".Title-box").value, "image": document.querySelector(".Url-box").value, "desc": document.querySelector(".Desc-box").value, "artist": document.querySelector(".Artist-box").value});
   console.log(gallery)
+  document.querySelector(".main").innerHTML = ""
+  gallery.forEach((piece) => inject(piece))
+  blurb()
 })
-gallery.forEach((piece) => inject(piece))
 
+function blurb(){
+  console.log(document.querySelectorAll(".item"))
+  document.querySelectorAll(".item").forEach((item)=>item.addEventListener("click", function () {
+    document.querySelector("shit")
+    document.querySelector(".blurb-container").innerHTML = ""
+    console.log(gallery)
+    let title = event.target.closest(".item").getAttribute("data-title")
+    let selecteditem = gallery.find((item)=>item.title === title)
+    document.querySelector(".blurb-container").insertAdjacentHTML(
+      "afterbegin",
+      `
+      <h4 class="blurb-author">Artist: ${selecteditem.artist}</h4>
+      <h4 class="blurb-text">${selecteditem.desc}</h4>
+      <img class="blurb-image" src="${selecteditem.image}"/>
+      `
+    )
+    document.querySelector(".blurb").showModal();
+  }))}
+document.querySelector(".close").addEventListener("click", () => {
+  document.querySelector(".blurb").close("animalNotChosen");
+});
+blurb()
 
 
 /*
