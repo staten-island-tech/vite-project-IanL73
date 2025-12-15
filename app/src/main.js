@@ -31,7 +31,7 @@ function inject(piece){
     const container = document.querySelector(".main");
     container.insertAdjacentHTML(
         "beforeend",
-        `<div class="item" data-title="${piece.title}" arbitrary-number=${piece.price}>
+        `<div class="item" data-title="${piece.title}">
             <h4 class="item-title">${piece.title}</h4>
             <img class="item-image" src="${piece.image}"/>
         </div>`
@@ -46,7 +46,8 @@ const filters = document.querySelector(".filter");
         let criteria = document.querySelector(".Search-box").value
         console.log(criteria)
         let filteredproducts = gallery.filter((gall) => gall.title === criteria)
-        filteredproducts.forEach((filteredproduct)=> inject(filteredproduct))}
+        filteredproducts.forEach((filteredproduct)=> inject(filteredproduct))},
+        blurb()
     );
 
 document.querySelector(".submit").addEventListener("click", function () {
@@ -54,6 +55,7 @@ document.querySelector(".submit").addEventListener("click", function () {
   console.log(gallery)
   document.querySelector(".main").innerHTML = ""
   gallery.forEach((piece) => inject(piece))
+  console.log(document.querySelectorAll(".item"))
   blurb()
 })
 
@@ -78,7 +80,6 @@ function blurb(){
 document.querySelector(".close").addEventListener("click", () => {
   document.querySelector(".blurb").close("animalNotChosen");
 });
-blurb()
 
 
 /*
